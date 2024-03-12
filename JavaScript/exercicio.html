@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+</head>
+
+<body>
+    <script>
+        var nome1 = window.prompt('Qual é o seu nome ?');
+        var idade1 = Number(window.prompt('Qual a sua idade ?'));
+        var nome2 = window.prompt('Qual é o nome do seu familiar mais proximo ?');
+        var idade2 = Number(window.prompt('Qual a sua idade ?'));
+        var data = new Date();
+        var data = data.toLocaleDateString();
+        var idadeSomada = Number(idade1 + idade2);
+
+
+        document.write("<p>Meu nome é " + nome1 + "<br>Minha idade é: " + idade1 + "<br>O nome do meu familiar é: " + nome2 + "<br> Sua idade é: " + idade2 + "<br> data de inscrição: " + data);
+        document.write("<p>"+idadeSomada+"</p>");
+        //  console.log("meu nome é "+nome1+", minha idade é " +idade1+ " e o nome do meu familiar mais proximo é "+nome2+" sua idade é "+idade2+" data de inscrição"+data);
+
+    </script>
+</body>
+
+</html>
