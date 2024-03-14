@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">Trabalhando com CSS em JavaScript</h1>
+
+    <button onclick="document.getElementById('titulo').style.color = 'blue'">Altera a cor do Titulo</button>
+
+    <p id="paragrafo1">Texto com algum tipo de destaque.</p>
+
+    <button onclick="document.getElementById('paragrafo1').style.color = 'red'">Altera a cor do paragrafo</button>
+
+    <p id="paragrafo2">Texto com muito destaque.</p>
+
+    <button onclick="document.getElementById('paragrafo2').style.fontSize = '50pt'">Altera o tamanho da fonte</button>
+    <button onclick="document.getElementById('paragrafo2').style.fontFamily = 'courier new'">Altera a fonte</button>
+    <hr>
+    <p id="texto">Texto desenvolvido por um clique</p>
+    <button onclick="document.getElementById('texto').innerHTML='OLA RONALDO' ">Clique aqui</button>
+    <br>
+    <br>
+    <button onclick="document.getElementById('acesa').src = 'img/luz.jpg'">Ligar</button>
+
+    <button id="btn"
+        onclick="document.getElementById('acesa').style.display = 'none'; document.getElementById('btn').style.visibility = 'hidden'">Ocultar</button>
+
+    <button
+        onclick="document.getElementById('acesa').style = ''; document.getElementById('btn').style.visibility = 'visible'">Mostrar</button>
+
+    <button onclick="document.getElementById('acesa').src = 'img/apagada.jpg'">Apagar</button>
+
+    <br>
+    <p> <img id="acesa" src="img/luz.jpg"> </p>
+
+    <p id="caixa">e a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum.
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using, making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).</p>
+
+
+    <script src="js/acoes.js"></script>
+</body>
+
+</html>
