@@ -6,48 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        h1 {
+            text-align: center;
+        }
+
         #azul {
             background-color: blue;
             color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
         }
 
         #verde {
             background-color: green;
             color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
         }
 
         #laranja {
             background-color: orange;
             color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        #botoes {
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+
         }
 
         h3 {
-            visibility: hidden;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-
     <h1>Escolhendo a cor e exbibindo o siginificado</h1>
     <br>
-    <br>
-    <h3 id="textLaranja">Laranja Significa Forca e Energia</h3>
-    <h3 id="textVerde">Verde significa esperança</h3>
-    <h3 id="textAzul">Azul significa...</h3>
+    <h3 id="text"></h3>
     <hr>
+    <div id="botoes">
+        <button id="azul">azul</button>
 
-    <button id="azul"
-        onclick="document.getElementById('textAzul').style.visibility = 'visible', document.getElementById('textVerde').style.visibility = 'hidden',document.getElementById('textLaranja').style.visibility = 'hidden', document.body.style.backgroundColor='blue'">azul</button>
+        <button id="verde">verde</button>
 
-    <button id="verde"
-        onclick="document.getElementById('textVerde').style.visibility = 'visible', document.getElementById('textLaranja').style.visibility ='hidden', document.getElementById('textAzul').style.visibility ='hidden',document.body.style.backgroundColor='green'"">verde</button>
+        <button id="laranja">laranja</button>
+    </div>
 
-    <button id="laranja"
-        onclick="document.getElementById('textLaranja').style.visibility = 'visible', document.getElementById('textAzul').style.visibility = 'hidden', document.getElementById('textVerde').style.visibility='hidden', document.body.style.backgroundColor='orange'">laranja</button>
-
-
-    <script src=" js/acoes2.js"></script>
+    <script src="js/acoesExercicio.js"></script>
 </body>
 
 
