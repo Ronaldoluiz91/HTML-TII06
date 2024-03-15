@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utopia [Página principal]</title>
+    <title>Utopia [Página contato]</title>
     <meta name="description" content="Projeto para o Utopia Bar">
 
 
@@ -22,58 +22,53 @@
     <header id="topo">
         <div>
             <h1>
-                <a href="index.html"><img src="imagensUtopiaBar/utopiaLogo-removebg-preview.png" alt="Logotipo"></a>
+                <a href="index.html"><img src="imagensUtopiaBar/utopiaLogo-removebg-preview.png" Logotipo"></a>
             </h1>
             <span id="iconMenu" class="material-symbols-outlined" onclick="clickMenu()">
                 menu
             </span>
             <nav id="itens">
-                <a href="#" tabindex="1">Sobre Nós</a>
+                <a href="Index.html" tabindex="1">Sobre Nós</a>
                 <!--tabindex é utilizado para a acessibilidade-->
                 <a href="cardapio.html" tabindex="2">Cardapio</a>
-                <a href="#" tabindex="3">Reserva</a>
-                <a href="#" tabindex="4">Localização</a>
-                <a href="#" tabindex="4">Contato</a>
+                <a href="reserva.html" tabindex="3">Reserva</a>
+                <a href="contato.html" tabindex="4">Contato</a>
                 <a href="#" tabindex="4">Trabalhe Conosco</a>
             </nav>
         </div>
     </header>
-
-    <main class="conteudo-contato">
-        <div class="contato">
-            <h3>Vamos Conversar</h3>
+    <div class="titulo-contato">
+        <h3>Vamos Conversar</h3>
+        <div class="conteudo-contato">
             <p> Deixe-nos uma mensagem e uma forma de contato para resposta.</p>
             <p>Em breve retornaremos</p>
-            <br>
-            <section class="formulario-contato">
-                <form>
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input required type="text" id="nome" name="nome">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="email"> Email: </label>
-                        <input required type="email" id="email" name="email">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="telefone">Whatsapp:</label>
-                        <input required type="tel" id="telefone" name="telefone" placeholder="(00)0000-0000">
-                    </div>
-                    <br>
-                    <div class="mensagem">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea name="mensagem" id="mensagem" cols="35" rows="10"></textarea>
-                    </div>
-                </form>
-            </section>
-            <br>
-            <button onclick="">Enviar</button>
+            <form action="" id="form-contato" method="post">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input tabindex="5" required type="text" id="nome" name="nome">
+                </p>
+                <p>
+                    <label for="telefone">Celular:</label>
+                    <input tabindex="6" required type="tel" id="telefone" name="telefone">
+                </p>
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value=""></option>
+                    <option value="">Elogios</option>
+                    <option value="">Reclamações</option>
+                    <option value="">Outros</option>
+                </select>
+                <p>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea tabindex="7" name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
+                </p>
+                <p>
+                    <button tabindex="8" id="limpar" type="reset" name="limpar">Limpar Campos</button>
+                    <button tabindex="9" id="enviar" name="enviar">Enviar Dados</button>
+                </p>
+            </form>
         </div>
-    </main>
-    <br>
-
+    </div>
     <footer class="rodape">
         <div class="endereco">
             <h3>Localização</h3>
@@ -93,20 +88,18 @@
             </div>
             <div class="menu-rodape">
                 <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Cardapio</a></li>
-                    <li><a href="#">Reserva</a></li>
-                    <li><a href="#">Localização</a></li>
+                    <li><a href="Index.html">Sobre Nós</a></li>
+                    <li><a href="cardapio.html">Cardapio</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="#">Trabalhe Conosco</a></li>
                 </ul>
             </div>
-
         </div>
         <div class="redes">
             <aside>
-                <a href="#"><img src="imagensUtopiaBar/facebook.png" alt="Logo do Facebook"></a>
-                <a href="#"> <img src="imagensUtopiaBar/insta.png" Logo do Instagram"></a>
+                <a href="#"><img src="imagensUtopiaBar/redes/facebook.png" alt="Logo do Facebook"></a>
+                <a href="#"> <img src="imagensUtopiaBar/redes/insta.png" Logo do Instagram"></a>
             </aside>
         </div>
         </div>

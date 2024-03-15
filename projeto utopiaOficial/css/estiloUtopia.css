@@ -1,0 +1,372 @@
+@charset "utf-8";
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');*/
+
+/*Criando regras utilizando o fluxo do MOBILE FIRST*/
+/*Regras gerais*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+hr {
+    max-width: 200px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Regras do Topo*/
+#topo {
+    background-color: black;
+    border-bottom: solid 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 img {
+    margin-top: 25px;
+    width: 200px;
+}
+
+#iconMenu {
+    color: white;
+    cursor: pointer;
+    min-height: 40px;
+    display: block;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+    font-size: 40px;
+}
+
+nav {
+    min-height: 40px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+}
+
+nav a:link,
+nav a:visited,
+#iconMenu:link,
+#iconMenu:visited {
+    text-decoration: none;
+    color: white;
+    transition: background-color 1s;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover,
+nav a:focus,
+#iconMenu:hover,
+#iconMenu:focus {
+    background-color: #B06761;
+    color: black;
+    transition: background-color 1s;
+    border-radius: 5%;
+}
+
+/*Regras para o FOOTER*/
+.rodape {
+    border-top: solid #B06761 5px;
+    background-color: #000;
+    color: #7f7f80;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape p,
+li {
+    font-size: 16px;
+}
+
+.rodape img {
+    margin: 0 5px;
+}
+
+.rodape-conteudo {
+    padding: 15px;
+    color: #fff;
+
+}
+
+.rodape-conteudo ul {
+    list-style: none;
+    margin: o auto;
+    padding: 10px 0;
+}
+
+#logo-rodape {
+    min-width: 146px;
+    width: 150 px;
+    margin: 0 auto;
+}
+
+.endereco {
+    color: white;
+    margin-top: 10px;
+    line-height: 45px;
+}
+
+#logo-rodape img {
+    margin-top: 25px;
+    width: 200px;
+}
+
+.menu-rodape a {
+    text-decoration: none;
+    color: #7f7f80;
+}
+
+.menu-rodape a:hover {
+    color: #fff;
+}
+
+.redes img {
+    min-width: 35px;
+    width: 35px;
+}
+
+.assinatura {
+    color: #fff;
+    background-color: #7f7f80;
+    text-align: center;
+    height: auto;
+}
+
+.assinatura p {
+    padding-top: 3%;
+}
+
+/*Regras Para o Index (Conteudo)*/
+.frase {
+    background-color: #B06761;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    line-height: 25px;
+}
+
+.sobreObar img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+#texto {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#texto h4 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding: 2%;
+    background-color: #B06761;
+    color: white;
+}
+
+.card {
+    margin: 25px;
+    background-color: white;
+    padding: 5px;
+    border: #B06761 1px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: black 1px 1px 5px;
+}
+
+.card img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: grey 1px 1px 5px;
+}
+.card img:hover{
+    filter: opacity(0.6);
+    transition: 1s;
+}
+
+.card h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #b7281b, #dcc3c3);
+    padding: 10px;
+    color: #000
+}
+
+/*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
+.menu-cardapios {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-cardapios h3 {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #f4d6d6, #f59a9a);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: grey 1px 1px 6px;
+}
+
+.menu-cardapios h3:hover {
+    color: #B06761;
+    transition: 1s;
+}
+
+.conteudo-cardapio {
+    
+    background: linear-gradient(to left, #f4b7b1, #f0e1df);
+    margin: 2px;
+    box-shadow: grey 1px 1px 5px;}
+
+.conteudo-cardapio h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: #B06761;
+    color: white;
+    padding: 5px;
+}
+.preço {
+    color: #B06761;
+}
+
+/*CARD CARDAPIO*/
+
+.textTam{
+    width:120px;
+    margin: 0 auto;
+    text-align: left;
+}
+.card-cardapio img {
+    width: 75px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.card-cardapio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    padding: 3px;
+    background-color: white;
+    text-align: justify;
+}
+
+.card-cardapio p {
+    max-width: 150px;
+}
+
+/*PAGINA CONTATO*/
+#form-contato {
+    margin: auto;
+    max-width: 700px;
+    width: 95%;
+    text-align: center;
+}
+
+#form-contato input,
+#form-contato textarea,
+#form-contato select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+
+#form-contato input,
+#form-contato select {
+    height: 30px;
+}
+
+#form-contato label {
+    font-weight: bold;
+}
+
+.titulo-contato h3 {
+    text-align: center;
+    background-color: #B06761;
+    color: white;
+}
+
+#form-contato button {
+    background-color: #B06761;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#form-contato button:hover,
+#form-contato button:focus {
+    cursor: pointer;
+}
+
+.conteudo-contato {
+    margin: 5%;
+    text-align: center;
+}
+
+/*Pagina reserva*/
+#form-reserva input,
+#form-reserva select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+
+#form-reserva input,
+#form-reserva select {
+    height: 30px;
+}
+#form-reserva label{
+    font-weight: bold;
+}
+.titulo-reserva{
+    background-color: #B06761;
+    color: white;
+    margin-left: -26px;
+    margin-right: -26px;
+}
+.conteudo-reserva {
+    margin: 5%;
+    text-align: center;
+}
+.conteudo-reserva button{
+    background-color: #B06761;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+}
+/*confirme reserva*/
+.titulo-confirm-reserva {
+    text-align: center;
+}
+
+#confirm-reserva input,
+#confirm-reserva select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+
+#confirm-reserva input,
+#confirm-reserva select {
+    height: 30px;
+}
+
+.confirm-reserva {
+    margin: 5%;
+}
