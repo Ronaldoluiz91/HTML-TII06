@@ -27,6 +27,7 @@ img {
 
 h1 img {
     margin-top: 25px;
+    margin-bottom: -45px;
     width: 200px;
 }
 
@@ -39,6 +40,10 @@ h1 img {
     line-height: 40px;
     padding-left: 1%;
     font-size: 40px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 154px;
 }
 
 nav {
@@ -49,6 +54,7 @@ nav {
     overflow: hidden;
     line-height: 40px;
     padding-left: 1%;
+    display: none;
 }
 
 nav a:link,
@@ -68,8 +74,7 @@ nav a:hover,
 nav a:focus,
 #iconMenu:hover,
 #iconMenu:focus {
-    background-color: #B06761;
-    color: black;
+    color: white;
     transition: background-color 1s;
     border-radius: 5%;
 }

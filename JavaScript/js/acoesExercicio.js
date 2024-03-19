@@ -3,6 +3,7 @@ var botaoAzul = document.getElementById("azul");
 var botaoVerde = document.getElementById("verde");
 var botaoLaranja = document.getElementById("laranja");
 
+
 /* botaoAzul.onclick = function () {
     document.getElementById('textAzul').style.visibility = 'visible',
         document.getElementById('textVerde').style.visibility = 'hidden',
@@ -35,4 +36,12 @@ botaoLaranja.onclick = function () {
 botaoVerde.onclick = function () {
     document.getElementById('text').innerHTML = "verde significa...";
     document.body.style.backgroundColor = 'green';
-}
+} 
+ 
+//Resolução sem usar function
+/*btnAzul.onmouseover = () => document.body.style.backgroundColor = "blue"; 
+btnAzul.onclick = () => textoH2.textContent = 'Azul Significa Harmonia';
+btnVerde.onmouseover = () => document.body.style.backgroundColor = "green"; 
+btnVerde.onclick = () => textoH2.textContent = 'Verde Significa Saúde e Esperança';
+btnLaranja.onmouseover = () => document.body.style.backgroundColor = "orange";
+btnLaranja.onclick = () => textoH2.textContent = 'Laranja Significa Força e Energia'; */
