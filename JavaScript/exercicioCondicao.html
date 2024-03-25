@@ -107,12 +107,12 @@
             <input type="text" id="nome">
         </div>
         <div>
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade">
+            <label for="email">email:</label>
+            <input type="email" id="email">
         </div>
         <div>
-            <label for="cargo">Cargo:</label>
-            <input type="text" id="cargo">
+            <label for="telefone">telefone:</label>
+            <input type="tel" id="telefone">
         </div>
         <div>
             <label for="salario">Salário:</label>
@@ -132,39 +132,35 @@
         </div>
 
         <div class="ficha-dados">
-            <label class="label-data">Idade: </label>
-            <p id="fidade"></p>
+            <label class="label-data">email: </label>
+            <p id="femail"></p>
         </div>
 
         <div class="ficha-dados">
-            <label class="label-salario">Salário: </label>
+            <label class="label-salario">telefone: </label>
+            <p id="ftelefone"></p>
+        </div>
+
+        <div class="ficha-dados">
+            <label class="label-cargo">salario: </label>
             <p id="fsalario"></p>
-        </div>
-
-        <div class="ficha-dados">
-            <label class="label-cargo">Cargo: </label>
-            <p id="fcargo"></p>
         </div>
     </div>
     <script>
         var nome = document.getElementById('nome');
-        var idade = document.getElementById('idade');
-        var salario = document.getElementById('salario');
-        var cargo = document.getElementById('cargo');
+        var idade = document.getElementById('email');
+        var salario = document.getElementById('telefone');
+        var cargo = document.getElementById('salario');
         var btnsalvar = document.getElementById('btnsalvar');
 
 
         function salvar(salvo) {
             if (salvo = 1) {
                 document.getElementById('fnome').innerHTML = nome.value
-                document.getElementById('fidade').innerHTML = idade.value
-                document.getElementById('fsalario').innerHTML = salario.value
+                document.getElementById('femail').innerHTML = idade.value
+                document.getElementById('ftelefone').innerHTML = salario.value
                 document.getElementById('fcargo').innerHTML = cargo.value
 
-                document.getElementById('fnome').innerHTML = nome.value
-                document.getElementById('fidade').innerHTML = idade.value
-                document.getElementById('fsalario').innerHTML = salario.value
-                document.getElementById('fcargo').innerHTML = cargo.value
             }
         }
 
