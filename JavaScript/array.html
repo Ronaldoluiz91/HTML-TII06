@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>Arrays</h1>
+    <p>É uma coleção/lista de dados indexados, ou seja, informações sequenciais <b>começando sempre em 0 (SEMPRE)</b>.
+    </p>
+
+    <script>
+        var massas = ['Pizza', 'Raviole', 'Esfiha', 'Canelonne'];
+        var frutas = ['Kiwi', 'Figo', 'Manga', 'Banana', 'Abacaxi', 'Morango'];
+
+        console.log(massas);
+        massas.push('Espaguete') // usado para incluir um item no final da lista
+        massas[massas.length - 1] // usado para trazer o ultimo item da lista
+
+        var herois = [];
+
+        herois[0] = 'Batman';
+        herois[1] = 'Hulk';
+        herois[2] = 'Homem de Ferro';
+        herois[3] = 'Thor';
+
+        console.log('O ' + herois[3] + ' almoça ' + massas[3] + ' e come ' + frutas[2]);
+
+        var numHerois = herois.length;
+        console.log('Quantos heróis ? ' + numHerois);
+
+        //sort metodo/função que ordena o conteúdo do array em ordem alfabética
+        var massasOrdenadas = massas.sort();
+        console.log(massasOrdenadas);
+
+        //IndexOf() = Metodo/função que retorna o indice do elemento.
+        console.log('Indice da pizza ' + massas.indexOf('Pizza'));
+
+        // Reverse() = Metodo/função que ordena (ao contrario ) a lista. Ex : lista de A a Z passa a ser de Z a A
+        console.log(massas.reverse());
+
+        var coisas = [10, 'Ronaldo', new Date, herois[2], '<h2>Olá Mundo</h2>'];
+        console.log(coisas);
+
+        //Matriz 
+        var programas = [
+            //0             1
+            ['Word', 'Excel'],              //0
+            ['Photoshop', 'Ilustrator'],   //1
+            ['VsCode', 'Sublime']          //2
+        ]
+
+        console.log('Os programas são: ' +programas[2][0]+ ' e ' +programas[1][1]); // a ordem para trazer as matrizes são primeiro linha e depois coluna 
+    </script>
+</body>
+
+</html>

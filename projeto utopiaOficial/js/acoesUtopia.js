@@ -14,7 +14,7 @@ btnmostrar.addEventListener('click', function() {
     }
 })
 
-btnmostrar.addEventListener('click' , function(){
+/* btnmostrar.addEventListener('click' , function(){
     if(logo.style.display === 'none')
     {
         logo.style.display = 'block';
@@ -22,7 +22,7 @@ btnmostrar.addEventListener('click' , function(){
      else{
         logo.style.display = 'none';
     }
-})
+}) */
 
 
 

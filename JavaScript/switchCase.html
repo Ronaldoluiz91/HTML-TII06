@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+
+<body>
+    <p></p>
+
+    <script>
+        var bairro = prompt('Qual é o seu bairro ?');
+        var taxaEntrega;
+
+        switch (bairro) {
+            case 'centro':
+                taxaEntrega = 15.00;
+                break;
+
+            case 'Jd. Damasceno':
+                taxaEntrega = 50.00;
+                break;
+
+            case 'Taipas':
+            case 'taipas':
+                taxaEntrega = 70.00;
+                break;
+            default:
+                taxaEntrega = 20.00
+        }
+        alert('A taxa de entrega é de R$: ' + taxaEntrega.toFixed(2));
+
+        ///////////////////////////////////////////////////////////////
+
+        fruta = prompt('Qual a fruta ?');
+
+        switch (fruta) {
+            case 'Banana': //dois cases para diferenciar letra maiuscula e minuscula
+            case 'banana':
+                alert('Olá');
+                break;
+            case 'maçã':
+                alert('Bem vindo');
+                break;
+            default:
+                alert('Não existe este item');
+        }
+    </script>
+</body>
+
+</html>
