@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop While no JS</title>
+</head>
+<body>
+    <script>
+ var contador = 1;
+
+ while(contador <=5){
+    console.log('Qual o valor do contador é:' +contador)
+    contador++
+ }
+
+ /* while(expressao)
+ instrução
+
+ // ou
+
+ do 
+ instrucao
+ while(expressao)
+ */
+
+
+ //Exemplos Do While
+ var aumento = 600;
+ do{
+console.log('O salário é de R$ ' +aumento);
+aumento +=50 
+ }while(aumento < 500)
+
+ const linguagem = ['JavaScript', 'Python', 'C#', 'PHP'];
+ var index = 0;
+ 
+ do{
+ console.log(linguagem[index]);
+
+ index ++
+ } while (index < linguagem.length);
+
+ console.log('\n'); //pular linha do console
+
+ const quantidadeVoltas = 15;
+ var voltaAtual = 6;
+
+ do{
+    console.log(voltaAtual);
+    voltaAtual ++;
+ }while(voltaAtual <= quantidadeVoltas)
+
+
+    </script>
+</body>
+</html>
