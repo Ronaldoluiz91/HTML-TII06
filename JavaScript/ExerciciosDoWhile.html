@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios Do While</title>
+</head>
+
+<body>
+    <script>
+
+        //Imprimir os números de 1 a 5 usando a estrutura Do While.
+
+        // var num = 1;
+        // var total = 5;
+        // do{
+        //     console.log(num);
+        //     num ++
+        // } while (num <= total);
+        //-----------------------------------------------------------------------------------------
+
+        //Calcular o fatorial de um numero usando a estrutura Do While
+        function calcularFatorial(numero) {
+            if (numero < 0) {
+                alert("Erro: Número negativo inserido.");
+            }
+            var i = 1;
+            var fatorial = 1;
+
+            do {
+                fatorial *= i;
+                i++;
+            } while (i <= numero);
+
+            return fatorial;
+        }
+
+        console.log(fatorial)
+
+        // Imprimir os números pares de 2 a 10 usando a estrutura Do While
+
+        // var num = 2;
+        // var pares = 10;
+
+        // do{
+        //     console.log(num);
+        //     num += 2
+        // } while( num <= pares)
+        //----------------------------------------------------------------------------------------
+
+        //Calcular a soma dos primeiros 10 números naturais usando a estrutura do while.
+
+        // var soma = 0;
+        // var numNaturais = 1;
+
+        // do {
+        //     soma += numNaturais
+        //     numNaturais++
+
+        // } while (numNaturais <= 10);
+
+        // console.log('A somas dos 10 primeiros numeros naturais é: ' + soma);
+
+        //-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
