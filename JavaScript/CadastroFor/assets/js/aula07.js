@@ -26,6 +26,39 @@ formContato.addEventListener('submit', (event) => {
     gerarLista()
 })
 
-function gerarLista(){
-    
+function gerarLista() {
+    var auxLista = '';
+
+    for (var posicao = 0; posicao < nome.length; posicao++) {
+        auxLista += `<div class= "card">
+
+                            <div class= "dados-label">
+                            <div>Nome Completo: </div>
+                            <div> ${nome[posicao]} </div>
+                            </div>
+
+                            <div class= "dados-label">
+                            <div>Email: </div>
+                            <div> ${email[posicao]} </div>
+                            </div>
+
+                            <div class= "dados-label">
+                            <div>Telefone: </div>
+                            <div> ${telefone[posicao]} </div>
+                            </div>
+
+                            <div class= "dados-label">
+                            <div>Assunto: </div>
+                            <div> ${assunto[posicao]} </div>
+                            </div>
+
+                            <div class= "dados-label">
+                            <div>Mensagem: </div>
+                            <div> ${msg[posicao]} </div>
+                            </div>
+
+                    </div>`;
+    }
+
+    divLista.innerHTML = auxLista
 }

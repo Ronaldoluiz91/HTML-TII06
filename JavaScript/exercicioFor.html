@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio </title>
+</head>
+  <!--  <h1 id="contador">Contador</h1>
+
+    <p id="resultado ">0</p>
+
+    <button id="decrementar">Decrementar</button>
+    <button id="restar">Restar</button>
+    <button id="incrementar">Incrementar</button>
+
+
+  <!--  <p>Contador: <span id="contador">0</span></p>
+    <button id="botao-decremento">Decremento</button>
+    <button id="botao-incremento">Incremento</button> -->
+
+
+
+    
+      <!--  // var resultado = document.getElementById('resultado');
+        // var decrementar = document.getElementById('decrementar');
+        // var restar = document.getElementById('restar');
+        // var incrementar = document.getElementById('incrementar');
+
+
+
+        // decrementar.addEventListener('click', function () {
+        //     resultado--;
+
+        // });
+
+        // incrementar.addEventListener('click', function () {
+        //     resultado++;
+
+        // });
+
+
+        // var contador = document.getElementById('contador');
+        // var botaoDecremento = document.getElementById('botao-decremento');
+        // var botaoIncremento = document.getElementById('botao-incremento');
+        // var contador = 0;
+
+
+
+        // botaoDecremento.addEventListener('click', function () {
+        //     contador--;
+            
+
+        // });
+
+        // botaoIncremento.addEventListener('click', function () {
+        //     contador++;
+            
+
+        // });
+
+        // contador.innerHTML = contador.value
+        // contador.innerHTML = contador.value -->
+
+
+        <body>
+        
+        <h1>Contador: <span id="contador">0</span></h1>
+        
+        <button id="incremento">Incrementar</button>
+        <button id="resetar">Resetar</button>
+        <button id="decremento">Decrementar</button>
+        
+        
+        <script>
+        
+        var contadorElement = document.getElementById('contador');
+        var incrementoBtn = document.getElementById('incremento');
+        var decrementoBtn = document.getElementById('decremento');
+        var resetar = document.getElementById('resetar')
+        
+        
+        var contador = 0;
+        
+       
+        function atualizarContador() {
+          contadorElement.textContent = contador;
+        }
+        
+        
+        function incrementar() {
+          contador++;
+          atualizarContador();
+        }
+        
+        
+        function decrementar() {
+          contador--;
+          atualizarContador();
+        }
+        
+        
+        incrementoBtn.addEventListener('click', incrementar);
+        decrementoBtn.addEventListener('click', decrementar);
+        </script>
+        
+        </body>
+        </html>
+        
+
+    
